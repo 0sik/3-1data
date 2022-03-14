@@ -18,5 +18,11 @@
     <ClCompile Include="Ch1_1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="queex.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch1_2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
