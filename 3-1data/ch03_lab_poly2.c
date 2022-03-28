@@ -3,8 +3,8 @@
 struct {
 	float coef;
 	int expon;
-} terms[MAX_TERMS] = { {8,3}, {7,1}, {1,0}, {10,3}, {3,2},{1,0} };
-int avail = 6;
+} terms[MAX_TERMS] = { {5,6}, {4,4}, {7,2}, {2,1}, {9,0},{7,4},{2,3},{5,2},{3,0} };//두개의 다항식과 결과값을 한 2차열배열에 저장
+int avail = 9;//결과 값을 저장하는 위치
 
 char compare(int a, int b);
 void attach(float coef, int expon);
@@ -14,7 +14,7 @@ void print_poly(int s, int e);
 //
 int main(void)
 {
-	int As = 0, Ae = 2, Bs = 3, Be = 5, Cs, Ce;
+	int As = 0, Ae = 4, Bs = 5, Be = 8, Cs, Ce;
 	poly_add2(As, Ae, Bs, Be, &Cs, &Ce);
 	print_poly(As, Ae);
 	print_poly(Bs, Be);
@@ -39,7 +39,7 @@ void attach(float coef, int expon)
 		exit(1);
 	}
 	terms[avail].coef = coef;
-	terms[avail++].expon = expon;
+	terms[avail++].expon = expon;//expon를 먼저 넣고 avail증가
 }
 
 // C = A + B

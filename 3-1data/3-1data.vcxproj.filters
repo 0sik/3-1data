@@ -51,5 +51,11 @@
     <ClCompile Include="CH03_lab_struct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ch03_lab_matrix_transpose01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch03_lab_matrix_transpose02.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
