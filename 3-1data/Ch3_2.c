@@ -1,19 +1,20 @@
 #include<stdio.h>
-void func(int *a, int *b);
+
 int main() {
-	int a = 1, b = 2;
-	printf("1> a = %d, b = %d\n", a, b);
-	func(&a,&b);
-	printf("2> a = %d, b = %d\n", a, b);
+	int data[4];
+	get_data(data,4);
+	for (int i = 0; i < 4; i++)
+	{
+		printf("%d", data[i]);
+	}
 	return 0;
 }
 
-void func(int *a, int *b) {
-	int tmp;
-	printf("func-1> a = %d, b = %d\n", *a, *b);
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-
-	printf("func-2> a = %d, b = %d\n", *a, *b);
+get_data(int data[], int count) {
+	printf("get_data> 정수 %d개를 입력하세요:",count);
+	for (int i = 0; i < count; i++)
+	{
+		scanf_s("%d", &data[i]);
+	}
 }
+
