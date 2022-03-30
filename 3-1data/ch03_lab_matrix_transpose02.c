@@ -21,11 +21,11 @@ SparseMatrix matrix_transpose2(SparseMatrix a);
 int main(void)
 {
 	SparseMatrix m = {
-		{	{ 0, 3, 7 },{ 1, 0, 9 },{ 1, 5, 8 },{ 3, 0, 6 },
-			{ 3, 1, 5 },{ 4, 5, 1 },{ 5, 2, 2 } },
-		6,
-		6,
-		7
+		{	{ 0, 0, 1 },{ 1, 3, 3 },{ 2, 4, 9 },{ 3, 1, 6 },
+			{ 4, 4, 7 },{ 5, 1, 3 },{ 5, 5, 8 },{ 6, 6, 2 } },
+		7,
+		7,
+		8
 	};
 	SparseMatrix result;
 	result = matrix_transpose2(m);
