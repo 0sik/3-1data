@@ -66,5 +66,17 @@
     <ClCompile Include="ch04_stack_glabal_1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ch04_infix_calculation_8.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch04_paren_matching_6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch04_postfix_evaluation_7.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch04_stack_glabal_3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
