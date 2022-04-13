@@ -5,7 +5,6 @@ struct {
 	int expon;
 } terms[MAX_TERMS] = { {5,6}, {4,4}, {7,2}, {2,1}, {9,0},{7,4},{2,3},{5,2},{3,0} };//두개의 다항식과 결과값을 한 2차열배열에 저장
 int avail = 9;//결과 값을 저장하는 위치
-
 char compare(int a, int b);
 void attach(float coef, int expon);
 poly_add2(int As, int Ae, int Bs, int Be, int* Cs, int* Ce);

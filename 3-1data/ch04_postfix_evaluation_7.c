@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define MAX_STACK_SIZE 100
 typedef char element;
 typedef struct {
@@ -61,7 +62,7 @@ int prec(char op)
 void infix_to_postfix(char exp[], char* result)//중위 표기식을 후위 표기식으로 바꾸는거
 {
     int i = 0, loc = 0;
-    char ch, top_op;
+    char ch, top_op, t;
     int len = strlen(exp);
     StackType s;
     init_stack(&s);               // 스택 초기화 
@@ -72,19 +73,24 @@ void infix_to_postfix(char exp[], char* result)//중위 표기식을 후위 표기식으로 �
         case '+': case '-': case '*': case '/': // 연산자
            // 스택에 있는 연산자의 우선순위가 더 크거나 같으면 출력
             while (!is_empty(&s) && (prec(ch) <= prec(peek(&s)))) {
-                printf("%c", pop(&s));
+                t = pop(&s);
+                printf("%c", t);
+                result[loc++] = t;
             }
             push(&s, ch);
             break;
         case '(':   // 왼쪽 괄호
-            push(&s, ch);
+            push(&s, ch); 
             break;
         case ')':   // 오른쪽 괄호
             top_op = pop(&s);
+            
             // 왼쪽 괄호를 만날때까지 출력
             while (top_op != '(') {
                 printf("%c", top_op);
+                result[loc++] = top_op;
                 top_op = pop(&s);
+                
             }
             break;
         default:      // 피연산자
@@ -136,7 +142,7 @@ int eval(char exp[])
 int main(void)
 {
     int result;
-    char* s = "(2+3)*2+3-5";
+    char* s = "(2+3)*4+9";
     char* r = malloc(sizeof(char) * strlen(s) + 1);
     infix_to_postfix(s, r);
     result = eval(r);

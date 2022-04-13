@@ -78,5 +78,8 @@
     <ClCompile Include="ch04_stack_glabal_3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ch04_maze_9.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
