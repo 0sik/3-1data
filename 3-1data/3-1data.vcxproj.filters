@@ -96,5 +96,11 @@
     <ClCompile Include="..\..\..\..\Downloads\ch05_dequeue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ch06_array_list.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ch06_linked_list_01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
