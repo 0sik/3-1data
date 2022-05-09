@@ -114,5 +114,11 @@
     <ClCompile Include="..\..\..\..\Downloads\ch06_linked_list_reverse.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ch07_circular_01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ch07_doubly_linked_list_03.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
