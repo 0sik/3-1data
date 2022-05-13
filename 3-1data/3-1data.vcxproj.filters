@@ -132,5 +132,8 @@
     <ClCompile Include="..\..\..\..\Downloads\ch07_stack_linked_list_05.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\project2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
